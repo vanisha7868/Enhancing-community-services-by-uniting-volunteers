@@ -1,0 +1,126 @@
+* General Styling */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Pages */
+.page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Home Page */
+#homePage header {
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#homePage header button {
+    background-color: #0c8f1d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#homePage header button:hover {
+    background-color: #0a7a18;
+}
+
+.about {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.about img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* Move the paragraph down */
+p {
+    margin-top: 20px;
+}
+
+/* App Page */
+#appPage header button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#appPage header button:hover {
+    background-color: #cc0000;
+}
+
+.districts, .districtProblems {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.districts:hover, .districtProblems:hover {
+    transform: scale(1.02);
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #0c8f1d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0a7a18;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .districts, .districtProblems {
+        margin: 10px;
+        padding: 15px;
+    }
+}
